@@ -24,8 +24,14 @@ public class Main {
             System.out.println("6. Salir");
             System.out.print("Elige una opción: ");
 
-            opcionPrincipal = scanner.nextInt();
-            scanner.nextLine(); // Limpiar buffer
+            try {
+                opcionPrincipal = scanner.nextInt();
+                scanner.nextLine(); // Limpiar buffer
+            } catch (Exception e) {
+                System.out.println("Error: Debes ingresar un número.");
+                scanner.nextLine(); // Limpiar buffer
+                opcionPrincipal = 0; // Opción inválida 
+            }
 
             switch (opcionPrincipal) {
                 case 1:
@@ -76,8 +82,14 @@ public class Main {
             System.out.println("5. Mostrar lista");
             System.out.println("6. Regresar/Salir");
             System.out.print("Elige una opción: ");
-            opcion = scanner.nextInt();
-            scanner.nextLine(); // Limpiar buffer
+            try {
+                opcion = scanner.nextInt();
+                scanner.nextLine(); // Limpiar buffer
+            } catch (Exception e) {
+                System.out.println("Error: Debes ingresar un número.");
+                scanner.nextLine(); // Limpiar buffer
+                opcion = 0; // Opción inválida
+            }
 
             switch (opcion) {
                 case 1:
@@ -135,8 +147,14 @@ public class Main {
             System.out.println("6. Mostrar lista en reversa");
             System.out.println("7. Regresar/Salir");
             System.out.print("Elige una opción: ");
-            opcion = scanner.nextInt();
-            scanner.nextLine(); // Limpiar buffer
+            try {
+                opcion = scanner.nextInt();
+                scanner.nextLine(); // Limpiar buffer
+            } catch (Exception e) {
+                System.out.println("Error: Debes ingresar un número.");
+                scanner.nextLine(); // Limpiar buffer
+                opcion = 0; // Opción inválida
+            }
 
             switch (opcion) {
                 case 1:
@@ -196,8 +214,14 @@ public class Main {
             System.out.println("5. Mostrar lista");
             System.out.println("6. Regresar/Salir");
             System.out.print("Elige una opción: ");
-            opcion = scanner.nextInt();
-            scanner.nextLine(); // Limpiar buffer
+            try {
+                opcion = scanner.nextInt();
+                scanner.nextLine(); // Limpiar buffer
+            } catch (Exception e) {
+                System.out.println("Error: Debes ingresar un número.");
+                scanner.nextLine(); // Limpiar buffer
+                opcion = 0; // Opción inválida
+            }
 
             switch (opcion) {
                 case 1:
@@ -260,8 +284,14 @@ public class Main {
             System.out.println("5. Regresar");
             System.out.print("Elige una opción: ");
 
-            opcion = scanner.nextInt();
-            scanner.nextLine(); // Limpiar buffer
+            try {
+                opcion = scanner.nextInt();
+                scanner.nextLine(); // Limpiar buffer
+            } catch (Exception e) {
+                System.out.println("Error: Debes ingresar un número.");
+                scanner.nextLine(); // Limpiar buffer
+                opcion = 0; // Opción inválida
+            }
 
             switch (opcion) {
                 case 1:
@@ -334,5 +364,6 @@ public class Main {
                     break;
             }
         }while (opcion != 5);
+
     }
 }
